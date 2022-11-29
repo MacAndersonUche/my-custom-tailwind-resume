@@ -148,7 +148,7 @@
 								</p>
 								<p class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal">
 									<span class="-ml-2 select-none text-gray-600">›</span>
-									<strong> 4+ years of experience. </strong>
+									<strong> 3+ years of experience. </strong>
 								</p>
 								<p class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal">
 									<span class="-ml-2 select-none text-gray-600">›</span>
@@ -269,7 +269,7 @@
 							<!-- End Work 1 -->
 
 							<!-- Work 3 -->
-							<section class="mb-4.5">
+							<!-- <section class="mb-4.5">
 								<header>
 									<h3
 										id="job-title"
@@ -307,7 +307,7 @@
 										Wrote unit tests for various helper functions.
 									</li>
 								</ul>
-							</section>
+							</section> -->
 							<!-- End Work 3 -->
 						</section>
 						<!-- End Experience Section -->
@@ -327,12 +327,12 @@
 										class="text-lg font-semibold tex t-gray-700 leading-snugish"
 									>
 										<a
-											href="https://github.com/MacAndersonUche/ecommerce-group-project-forked.git"
+											href="https://www.bosch-home.co.uk/"
 											class="group"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											Full-Stack eCommerce Application
+											Full-Stack Order Managment Application
 											<span
 												class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
 												>↗</span
@@ -340,11 +340,12 @@
 										</a>
 									</h3>
 									<p class="leading-normal text-sm text-gray-650">
-										A Collaborative App | Javascript React Express Node.js
-										GraphQL and AWS
+										An Internal Application to Help the Non Technical Team View
+										and Manage Bosch Orders | TypeScript React Node.js Jest AWS
+										Serverless ERP SQL | 2022
 									</p>
 									<p class="leading-normal text-sm text-gray-650">
-										<i>A work in progress</i>
+										<i>Completed</i>
 									</p>
 								</header>
 								<div class="mt-2.1 text-xs text-gray-700 leading-normal">
@@ -354,33 +355,32 @@
 									<ul class="list-inside">
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											Users can list and update stock simply by scanning the
-											book's barcode, ISBN, or Amazon ASIN.
+											Once successfully authenticated with AWS Cognito, users
+											can view all orders and filter them by orderNumber or
+											status.
 										</li>
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											Calls an external Express Apollo server using GraphQL that
-											acts as a API-Gateway & microservice.
+											Once a user successfully authenticated with AWS Cognito,
+											they make a call to API Gateway which then triggers the
+											Lambda function which then calls the DynamoDB table which
+											stores order details.
 										</li>
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											Server makes additional requests to external datasources
-											for relevant book data.
+											customer order details, sku, ordernumber, order date etc
+											are then relayed to client's React front-end.
 										</li>
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											Historic pricing data, book description, title, author,
-											category, is then relayed to client's React front-end.
+											Users can also view the order details and update the order
+											status on the client side and the server side.
 										</li>
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											The user can review, edit book info, and easily add the
-											book to their Shopify store within 2-3 seconds.
-										</li>
-										<li class="ml-1.5">
-											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											Lambdas and step functions were used to orchestrate the
-											workflow and the results for in S3 buckets
+											The backend was built with Node and it consisted of
+											Lambdas that make regular calls to ERP and update DynamoDB
+											whenever an order status changes.
 										</li>
 									</ul>
 								</div>
