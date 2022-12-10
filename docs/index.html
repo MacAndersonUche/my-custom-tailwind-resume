@@ -557,7 +557,7 @@
 											class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-750 print:bg-white print:border-inset bg-gray-200"
 										>
 											AWS Lambda, S3, SQS, SNS, DynamoDB, CloudWatch,
-											CloudFormation, CloudFront, API Gateway.
+											CloudFormation, API Gateway.
 										</li>
 										<li
 											class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-750 print:bg-white print:border-inset bg-gray-200"
@@ -858,16 +858,15 @@
 										</li> -->
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											The user can authenticate with AWS Cognito, then make a
-											call to API Gateway, triggering a Lambda function which
-											accesses the order details stored in DynamoDB.
+											The user authenticates with Cognito, and calls API Gateway
+											which triggers the Lambda function to access DynamoDB
+											order details.
 										</li>
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
-											Customer order details such as sku, order number, and
-											order date are relayed to the client's React front-end.
-											Users can view and update order status both on the client
-											and server side.
+											Customer order details like SKU, order number, and date
+											are relayed to the React front-end. Users can view and
+											update order status on both the client and server sides.
 										</li>
 										<li class="ml-1.5">
 											<span class="-ml-1.5 select-none text-gray-600">›</span>
