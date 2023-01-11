@@ -40,5 +40,4 @@ Starting Point
 Also, with additionally running `git add docs/styles.css -f` and committing changes, it’s ready for push to GitHub and integration with GitHub Pages. GitHub Pages are free for  public repositories. Under your repository name, not profile, click “Settings” and enable GitHub Pages by navigating to: `Options → GitHub Pages → Source → /docs`.
 
 ---------
-![](https://komarev.com/ghpvc/?username=MacAndersonUche&color=green&style=for-the-badge)
 
