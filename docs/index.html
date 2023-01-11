@@ -24,7 +24,9 @@
       );
       xhr.responseType = "json";
       xhr.onload = function () {
-        document.getElementById("visits").innerText = this.response.value;
+        document.getElementById(
+          "visits"
+        ).innerText = `This Site has been visited ${this.response.value} times`;
       };
       xhr.send();
     </script>
@@ -53,7 +55,6 @@
             class="print:text-6xl lg:text-6xl md:text-5xl mr-auto text-3xl font-semibold text-gray-750 pb-px"
           >
             MacAnderson Uche
-            <div id="visits"></div>
           </h1>
           <!-- End Name -->
 
@@ -1027,6 +1028,7 @@
                 >↗</span
               >
             </a>
+            <p id="visits"></p>
           </section>
         </footer>
         <!-- End Footer Build Info -->
