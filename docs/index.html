@@ -19,13 +19,13 @@
     <script>
       var xhr = new XMLHttpRequest();
       xhr.open(
-        "GET",
-        "https://api.countapi.xyz/hit/macandersonuche.dev/visits"
+        'GET',
+        'https://api.countapi.xyz/hit/macandersonuche.dev/visits'
       );
-      xhr.responseType = "json";
+      xhr.responseType = 'json';
       xhr.onload = function () {
         document.getElementById(
-          "visits"
+          'visits'
         ).innerText = `This Site has been visited ${this.response.value} times`;
       };
       xhr.send();
@@ -185,11 +185,11 @@
               </h3> -->
                 <p class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal">
                   <span class="-ml-2 select-none text-gray-600">›</span>
-                  <strong> UK Resident - Based in London, UK. </strong>
+                  <strong> UK Citizen with 6+ years of experience</strong>
                 </p>
                 <p class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal">
                   <span class="-ml-2 select-none text-gray-600">›</span>
-                  <strong> 5+ years of experience. </strong>
+                  I reside in both Nairobi, Kenya, and Shrewsbury, UK.
                 </p>
                 <p class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal">
                   <span class="-ml-2 select-none text-gray-600">›</span>
@@ -215,6 +215,77 @@
               </h2>
 
               <!-- Work 1 -->
+              <!-- Work 1 -->
+              <section class="mb-4.5">
+                <header>
+                  <h3
+                    id="job-title"
+                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                  >
+                    Senior Full-Stack Engineer
+                    <span id="company-name" class="text-gray-550 font-semibold"
+                      >@ Traced Mobile Security</span
+                    >
+                  </h3>
+                  <p
+                    id="work-date-location"
+                    class="leading-normal text-sm text-gray-700 mt-1"
+                  >
+                    November 2023 – Present // Remote - UK
+                  </p>
+                </header>
+                <ul id="work-description-bullets" class="">
+                  <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Designed and developed a Zero Trust solution to block
+                    customer devices with high-risk states from accessing
+                    Microsoft resources and utilized React and Zustand for the
+                    front end, with Node.js, TypeScript, and AWS powering the
+                    backend by integrating with Microsoft Graph API.
+                  </li>
+                  <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Developed a customer web app using React and Zustand for
+                    seamless device management and real-time threat detection.
+                    Integrated with a backend built on Node.js, TypeScript, and
+                    AWS services, enhancing Trusted's ability to identify and
+                    respond to security threats efficiently.
+                  </li>
+                  <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Developed scalable integration endpoints to grant Cybersmart
+                    Systems access to Traced's mobile security architecture,
+                    enabling threat detection in Cybersmart apps through Traced.
+                    We utilized Node.js, TypeScript, and AWS services in the
+                    implementation.
+                  </li>
+                  <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Built and automated an end-to-end testing infrastructure for
+                    Traced using Playwright, TypeScript, and GitHub Actions.
+                    Integrated the tests into the CI/CD pipeline to ensure full
+                    functionality checks during deployment, verifying code
+                    integrity before release.
+                  </li>
+                  <!-- <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Fostered comprehensive synergy by integrating all banking
+                    services seamlessly into the broader application ecosystem,
+                    ensuring APIs remain accessible and responsive for user
+                    interactions within the customer dashboard.
+                  </li> -->
+                </ul>
+              </section>
               <section class="mb-4.5">
                 <header>
                   <h3
@@ -230,7 +301,7 @@
                     id="work-date-location"
                     class="leading-normal text-sm text-gray-700 mt-1"
                   >
-                    October 2021 – Date // London, UK (Remote)
+                    October 2021 – November 2023 // Remote - London, UK
                   </p>
                 </header>
                 <ul id="work-description-bullets" class="">
@@ -262,15 +333,15 @@
                     bolstering the organization's agility and flexibility in
                     responding to customer needs.
                   </li>
-                  <li
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
                     Orchestrated the integration of our payments Lambda
                     functions with Treasury Prime, optimizing ACH and wire
                     transfer processing for enhanced financial operations.
-                  </li>
-                  <li
+                  </li> -->
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
@@ -278,7 +349,7 @@
                     services seamlessly into the broader application ecosystem,
                     ensuring APIs remain accessible and responsive for user
                     interactions within the customer dashboard.
-                  </li>
+                  </li> -->
                 </ul>
               </section>
               <section class="mb-4.5">
@@ -296,7 +367,7 @@
                     id="work-date-location"
                     class="leading-normal text-sm text-gray-700 mt-1"
                   >
-                    January 2020 – October 2021 // Manchester, UK (Remote)
+                    January 2020 – October 2021 // Remote - Manchester, UK
                   </p>
                 </header>
                 <ul id="work-description-bullets" class="">
@@ -317,22 +388,22 @@
                     originally written in clouformation to use AWS CDK, this was
                     done to provide more reusability across the company.
                   </li>
-                  <li
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
                     Developed various internal APIs to be used in the day to day
                     operations and are OpenAPI Compliant. These APIS were
                     deployed on AWS API Gateway.
-                  </li>
-                  <li
+                  </li> -->
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
                     Construct tailored performance monitoring and dashboard for
                     stock efficiency and metrics across multiple marketplaces
                     and our own website vertical.
-                  </li>
+                  </li> -->
                 </ul>
               </section>
               <!-- Work 1 -->
@@ -422,22 +493,22 @@
                     front-end and GraphQL APIs with Node.js, Express, and Apollo
                     for the back-end.
                   </li>
-                  <li
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
                     Collaborated with a US-based team to build an internal
                     software application using React.js and Node.js to
                     streamline procedures and decrease human mistakes.
-                  </li>
-                  <li
+                  </li> -->
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
                     To count PayPal clicks during checkout, we integrated Google
                     Analytics with Google Tag Manager and created a custom event
                     to track them.
-                  </li>
+                  </li> -->
                 </ul>
               </section>
               <!-- End Work 1 -->
@@ -507,16 +578,16 @@
                     id="job-title"
                     class="text-lg font-semibold text-gray-700 leading-snugish"
                   >
-                    Chapter Co-Lead
+                    Member
                     <span id="company-name" class="text-gray-550 font-semibold"
-                      >@ Codecademy</span
+                      >@ Shrewsbury Street Pastors</span
                     >
                   </h3>
                   <p
                     id="work-date-location"
                     class="leading-normal text-sm text-gray-700 mt-1"
                   >
-                    January 2021 – Present //United States
+                    May 2024 – Present //United Kingdom
                   </p>
                 </header>
                 <ul id="work-description-bullets" class="">
@@ -531,9 +602,55 @@
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <span class="-ml-2 select-none text-gray-600">›</span>
+                    Give blankets to people at risk of exposure/hypothermia
+                  </li>
+                  <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Support vulnerable people in different situations
+                  </li>
+                  <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
+                    Give a listening ear to those who want or need to talk
+                  </li>
+                </ul>
+              </section>
+              <section class="mb-4.5">
+                <header>
+                  <h3
+                    id="job-title"
+                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                  >
+                    Chapter Co-Lead
+                    <span id="company-name" class="text-gray-550 font-semibold"
+                      >@ Codecademy</span
+                    >
+                  </h3>
+                  <p
+                    id="work-date-location"
+                    class="leading-normal text-sm text-gray-700 mt-1"
+                  >
+                    January 2021 – Present //United States (Remote)
+                  </p>
+                </header>
+                <ul id="work-description-bullets" class="">
+                  <!-- <li
+										class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+									>
+										<span class="-ml-2 select-none text-gray-600">›</span>
+										Co-host virtual meetups for developers and students learning
+										programming
+									</li> -->
+                  <!-- <li
+                    class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
+                  >
+                    <span class="-ml-2 select-none text-gray-600">›</span>
                     Provide live demos, workshops, tutoring, and mentoring for
                     devs and students learning JavaScript, and React.
-                  </li>
+                  </li> -->
                 </ul>
               </section>
             </section>
@@ -619,7 +736,7 @@
 											>
 										</a>
 									</li> -->
-                  <li
+                  <!-- <li
                     class="mt-2.1 ml-1.5 text-sm text-gray-700 leading-normal"
                   >
                     <a
@@ -635,7 +752,7 @@
                         >↗</span
                       >
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </section>
               <!-- End Work 1 -->
